@@ -11,15 +11,16 @@ REST service will run on port 8080(when run from docker) and will control the da
 
 ## Usage
 The following routes can be accessed when service is running:
+ 
 Route:
-* /client
+* /client 
 Methods:
- * POST, GET
-
+ * POST, GET 
+ 
 Route:
-* /client/:id
+* /client/:id 
 Methods:
-* GET, PUT, DELETE
+* GET, PUT, DELETE 
 
 ## Running from docker
 
