@@ -9,6 +9,29 @@ REST service will run on port 8080(when run from docker) and will control the da
 * Email
 * Phone number
 
+## Usage
+The following routes can be accessed when service is running:
+Route:
+* /client
+Methods:
+ * POST, GET
+
+Route:
+* /client/:id
+Methods:
+* GET, PUT, DELETE
+
+## Running from docker
+
+In order to prepare the docker for running this code use the following command in the root directory, ```docker``` must be installed in the computer:
+```bash
+docker-compose build
+```
+
+To run all the services inside docker use:
+```bash
+docker-compose up
+```
 
 ## Running from source
 
@@ -29,21 +52,6 @@ npm test
 ```
 Note: database connection could be needing adjusting if run from source, edit app.js file for this. 
 
-## Running from docker
+## License
 
-In order to prepare the docker for running this code use the following command in the root directory:
-```bash
-docker-compose build
-```
-
-To run all the services inside docker use:
-```bash
-docker-compose up
-```
-
-## Usage
-The following routes can be accessed when service is running:
-Route | Method
------------- | -------------
-/client | POST, GET
-/client/:id | GET, PUT, DELETE
+Public domain
