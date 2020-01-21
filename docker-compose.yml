@@ -1,0 +1,10 @@
+version: "2"
+services:
+ web:
+  build: .
+  links: [database]
+  ports: ["8080:8080"]
+  depends_on: [database]
+ database:
+  image: mongo
+  ports: ["2727:2727"]
